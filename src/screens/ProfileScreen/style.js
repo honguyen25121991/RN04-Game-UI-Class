@@ -4,10 +4,9 @@ import {COLORS} from '../../themes/styles';
 export default StyleSheet.create({
   container: {
     paddingHorizontal: 15,
-    flex: 1,
   },
   headerContainer: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'space-around',
   },
   headerText: {
@@ -16,12 +15,12 @@ export default StyleSheet.create({
   },
 
   popularGameContainer: {
-    flex: 3,
+    flex: 2,
   },
-
   imagePopularGame: {
     height: 80,
     width: 80,
     borderRadius: 10,
+    marginVertical: 6,
   },
 });

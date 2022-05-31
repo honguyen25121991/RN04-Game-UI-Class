@@ -39,6 +39,7 @@ const StreamScreen = () => {
         <FlatList
           style={{flexGrow: 0, marginTop: 10}}
           horizontal
+          showsVerticalScrollIndicator={false}
           data={listGame}
           ItemSeparatorComponent={() => <View style={{width: 20}} />}
           renderItem={({item}) => (

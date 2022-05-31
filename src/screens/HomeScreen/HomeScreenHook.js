@@ -19,7 +19,6 @@ const HomeScreen = () => {
   const isFetching = useSelector(getIsFetchSelector);
 
   useEffect(() => {
-    console.log('HomeScreenHook');
     dispatch(getRequestListGame());
   }, []);
 

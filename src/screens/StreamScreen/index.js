@@ -47,12 +47,12 @@ const StreamScreen = () => {
         />
       </View>
       <View style={styles.liveContainer}>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', top: -20}}>
           <Text title style={styles.titleGameText}>
             Live Games
           </Text>
-          <View>
-            <Text style={{color: 'red'}}>View All</Text>
+          <View style={{position: 'absolute', right: 10, top: 5}}>
+            <Text>View All</Text>
           </View>
         </View>
         <FlatList

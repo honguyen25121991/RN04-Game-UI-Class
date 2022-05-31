@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {View, TextInput, FlatList, Image, ImageBackground} from 'react-native';
-import styles from './ styles.StreamScreen';
+import styles from './styles.StreamScreen';
 import {BackgroundView, Text} from '../../components/index';
 import AntIcon from 'react-native-vector-icons/AntDesign';
 import {COLORS} from '../../themes/styles';

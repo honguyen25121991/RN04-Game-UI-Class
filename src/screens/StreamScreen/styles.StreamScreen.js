@@ -20,9 +20,12 @@ export default StyleSheet.create({
     paddingRight: 40,
     color: COLORS.white,
   },
-  searchIcon: {position: 'absolute', top: 5, right: 10},
+  searchIcon: {position: 'absolute', top: 12, right: 20},
   popularGameContainer: {
     flex: 1,
+  },
+  titleGameText: {
+    fontSize: 20,
   },
   imagePopularGame: {
     height: 80,

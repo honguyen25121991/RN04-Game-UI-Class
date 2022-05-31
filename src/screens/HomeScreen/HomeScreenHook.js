@@ -8,7 +8,6 @@ import {
   getListGameSelector,
 } from '../../redux/selectors/gameSelector';
 import {getRequestListGame} from '../../redux/thunk/gameThunkAction';
-import {COLORS} from '../../themes/styles';
 import GameItem from './components/GameItem';
 import styles from './styles';
 

@@ -17,96 +17,44 @@ const ProfileScreen = () => {
   return (
     <BackgroundView style={styles.container}>
       <View style={styles.headerContainer}>
-        <View
-          style={{
-            marginTop: 30,
-            backgroundColor: '#fff',
-            width: 100,
-            height: 100,
-            borderRadius: 50,
-            alignSelf: 'center',
-          }}></View>
+        <View style={styles.avatar}></View>
         <View style={{alignItems: 'center'}}>
           <Text style={{fontSize: 20}} bold>
             CyberSoft
           </Text>
         </View>
-        <View
-          style={{
-            borderRadius: 5,
-            paddingHorizontal: 10,
-            flexDirection: 'row',
-            justifyContent: 'center',
-          }}>
-          <View
-            style={{
-              backgroundColor: COLORS.lightPurple,
-              paddingHorizontal: 10,
-              paddingVertical: 6,
-              borderRadius: 5,
-              marginHorizontal: 10,
-            }}>
+        <View style={styles.bannerTitle}>
+          <View style={styles.bannerTitleContainer}>
             <Text bold>Pro Gamer</Text>
           </View>
+
           <View
-            style={{
-              backgroundColor: COLORS.lightYellow,
-              paddingHorizontal: 10,
-              paddingVertical: 6,
-              borderRadius: 5,
-            }}>
+            style={[
+              styles.bannerTitleContainer,
+              {
+                backgroundColor: COLORS.lightYellow,
+              },
+            ]}>
             <Text style={{color: COLORS.black, fontWeight: '600'}}>
               Pro Coder
             </Text>
           </View>
         </View>
-        <View
-          style={{
-            borderRadius: 5,
-            paddingHorizontal: 10,
-            flexDirection: 'row',
-            justifyContent: 'center',
-          }}>
-          <View
-            style={{
-              flexDirection: 'row',
-              marginHorizontal: 10,
-            }}>
-            <Text style={{fontSize: 28, fontWeight: 'bold'}}>250</Text>
-            <Text
-              style={{
-                marginTop: 15,
-                marginLeft: 5,
-                color: COLORS.opacityWhite,
-              }}>
-              {' '}
-              Games
-            </Text>
+        <View style={styles.bannerContent}>
+          <View style={styles.listGameEnjoy}>
+            <Text style={styles.gameEnjoy}>250</Text>
+            <Text style={styles.gameEnjoyContent}>Games</Text>
           </View>
           <View
             style={{
               flexDirection: 'row',
             }}>
-            <Text style={{fontSize: 28, fontWeight: 'bold'}}>4</Text>
-            <Text
-              style={{
-                marginTop: 15,
-                marginLeft: 5,
-                color: COLORS.opacityWhite,
-              }}>
-              Purchasedr
-            </Text>
+            <Text style={styles.gameEnjoy}>4</Text>
+            <Text style={styles.gameEnjoyContent}>Purchasedr</Text>
           </View>
         </View>
         <View style={{alignItems: 'center'}}>
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: '400',
-              color: COLORS.opacityWhite,
-            }}>
-            Purchased Games
-          </Text>
+          <Text style={styles.listPurchased}>Purchased Games</Text>
         </View>
       </View>
       <View style={styles.popularGameContainer}>
@@ -116,21 +64,16 @@ const ProfileScreen = () => {
           showsVerticalScrollIndicator={false}
           ItemSeparatorComponent={() => <View style={{width: 20}} />}
           renderItem={({item}) => (
-            <View style={{flexDirection: 'row'}}>
+            <View style={styles.gameIcon}>
               <Image
                 style={styles.imagePopularGame}
                 source={{uri: item.icon}}
               />
-              <View style={{marginTop: 25, marginLeft: 15}}>
+              <View style={styles.gameIconTitle}>
                 <Text bold>{item.title}</Text>
                 <Text subText>825 Sales</Text>
               </View>
-              <View
-                style={{
-                  position: 'absolute',
-                  right: 10,
-                  top: 40,
-                }}>
+              <View style={styles.gamePrice}>
                 <Text style={{color: COLORS.lightPurple}} bold>
                   $ 36
                 </Text>
